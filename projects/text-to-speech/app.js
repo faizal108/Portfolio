@@ -9,9 +9,9 @@ function textToAudio() {
     speech.lang = "en-US";
     speech.text = msg;
     speech.volume = 1;
-    speech.rate = .9;
-    speech.pitch = 1;
-    speech.voice = voices[5];
+    speech.rate = 1;
+    speech.pitch = .8;
+    speech.voice = voices[10];
     
     window.speechSynthesis.speak(speech);
 }
