@@ -10,6 +10,9 @@ recognition.onstart = function(){
 recognition.onresult = function(event){  
   var text = event.results[0][0].transcript;  
   console.log(text);  
+  if(text === "your" && text === "age") {
+    text = "i am 18 year old!";
+  }
   document.getElementById("result").value = text;  
 }  
 function copyDivToClipboard() {  
