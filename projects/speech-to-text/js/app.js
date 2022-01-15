@@ -12,12 +12,18 @@ recognition.onresult = function(event){
   console.log(text);  
   document.getElementById("result").value = text;  
 }  
-function copyDivToClipboard() {  
-  var range = document.createRange();  
-  range.selectNode(document.getElementById("result"));  
-  window.getSelection().removeAllRanges(); // clear current selection  
-  window.getSelection().addRange(range); // to select text  
-  document.execCommand("copy");  
-  window.getSelection().removeAllRanges();// to deselect  
-  alert("Copied the text: ");  
-}  
+
+
+
+
+
+
+// function copyDivToClipboard() {  
+//   var range = document.createRange();  
+//   range.selectNode(document.getElementById("result"));  
+//   window.getSelection().removeAllRanges(); // clear current selection  
+//   window.getSelection().addRange(range); // to select text  
+//   document.execCommand("copy");  
+//   window.getSelection().removeAllRanges();// to deselect  
+//   alert("Copied the text: ");  
+// }  

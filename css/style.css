@@ -1,14 +1,24 @@
 @import 'utilities.css';
 
 :root {
-    --primary: #3dcfd3;
+    /* --primary: #3dcfd3;
+    --secondary: #070606;
+    --dark: #161616;
+    --pure: #ffffff;
+    --ternary: #898989;
+    --light: #f2f2f2; */
+
+
+    /* --primary : #976c1d; */
+    /* --primary: #30bcd4; */
+
+
+    --primary: #ffb006;
     --secondary: #070606;
     --dark: #161616;
     --pure: #ffffff;
     --ternary: #898989;
     --light: #f2f2f2;
-    /* --primary : #976c1d; */
-
 }
 
 body {
@@ -441,10 +451,10 @@ section {
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
     object-fit: cover;
-    animation: blink 5s infinite;
+    /* animation: blink 5s infinite; */
 }
 
-@keyframes blink {
+/* @keyframes blink {
     from {
         height: 95px;
         width: 95px;
@@ -454,7 +464,7 @@ section {
         height: 102px;
         width: 102px;
     }
-}
+} */
 
 .reviews .slider .slide {
     text-align: center;
@@ -567,7 +577,7 @@ section {
 .contact .input-wrap {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 2rem;
+    grid-gap: 1.5rem;
     margin-bottom: 2rem;
 }
 
@@ -600,6 +610,30 @@ section {
 .contact .btn-wrapper {
     text-align: center;
     margin-top: 2rem;
+}
+
+.form-mic {
+    width: 1.7rem;
+    height: 1.7rem;
+    border: 2px solid var(--primary);
+    border-radius: 50%;
+    margin-top: .2rem;
+    padding: 2px;
+    transition: all .3s ease;
+}
+.form-mic:hover {
+    background-color: #c2302c;
+    border-style: dotted;
+    border-color: var(--primary);
+    filter: invert(100%);
+}
+.name-mic {
+    position: absolute;
+    left: 46%;
+}
+.message-mic {
+    position: absolute;
+    left: 92%;
 }
 
 /* ----------footer------------ */
