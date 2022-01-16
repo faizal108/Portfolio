@@ -1,0 +1,223 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #2874f0;
+    width: 100%;
+    height: 56px;
+    position: sticky;
+    top: 0px;
+    z-index: 100;
+    /* border: 2px solid red; */
+}
+.main-left .nav-bar {
+    margin-left: 1rem;
+    display: none;
+}
+.main-left .nav-bar img {
+    width: 2rem;
+}
+.main-left {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin-left: 1rem; */
+    /* border: 2px solid red; */
+}
+
+/* @media screen and (max-width: 1100px) {
+    .header-right .active {
+        display: none;
+    }
+} */
+@media screen and (max-width: 950px) {
+    .category-row {
+        overflow: scroll;
+    }
+
+    .header-center .header-center-input {
+        width: 20rem;
+    }
+}
+@media screen and (max-width: 750px)  {
+    .header-center {
+        display: none;
+    }
+    header {
+        justify-content: space-between;
+    }
+    .main-left {
+        justify-content: start;
+    }
+    .main-left .nav-bar {
+        display: block;
+    }
+}
+@media screen and (min-width: 750px) {
+    .header-search {
+        display: none;
+    }
+} 
+.header-left {
+    margin: 0 3rem 0 1rem;
+    cursor: pointer;
+    /* border: 2px solid red; */
+}
+
+.header-left a {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    font-style: italic;
+    letter-spacing: 1.5px;
+}
+
+.header-left-p a {
+    font-size: 10px;
+    letter-spacing: 1.5px;
+}
+
+.header-left-p span {
+    color: yellow;
+    font-size: 10px;
+    letter-spacing: 1px;
+}
+
+.header-left-p:hover {
+    text-decoration: underline;
+    color: white;
+}
+
+.header-center {
+    text-align: left;
+    line-height: 50px;
+    cursor: pointer;
+    padding-left: 10px;
+    position: relative;
+}
+
+.header-center-input {
+    height: 36px;
+    width: 30rem;
+    border: none;
+    outline: none;
+    padding-left: 20px;
+    cursor: pointer;
+}
+
+/*
+.fa-search{
+    position: absolute;
+    top: 30%;
+    left: 94%;
+    font-size: 18px;
+    color: #2874f0;
+}*/
+.header-right {
+    width: 40%;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    text-transform: capitalize;
+    line-height: 50px;
+    justify-content: center;
+}
+
+.header-right a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+    margin: 0 1rem;
+}
+.header-right .active {
+    background-color: white;
+    color: #2874f0;
+    height: 30px;
+    padding: 0 .5rem;
+    width: 150px;
+    margin: 0 .5rem;
+    line-height: 23px;
+    border-radius: 2px;
+    text-align: center;
+}
+
+.fa-shopping-cart {
+    padding-right: 10px;
+}
+
+.fa-sort-down {
+    padding-left: 5px;
+
+}
+
+.header-search {
+    background-color: #2874f0;
+    width: 100%;
+    padding: 0 .5rem .5rem .5rem;
+    /* border: 2px solid red; */
+}
+.header-search input {
+    width: 100%;
+    height: 36px;
+    border: none;
+    outline: none;
+    padding-left: 20px;
+    border-radius: 2.5px;
+    cursor: pointer;
+}
+
+.shoes-page-section .all-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+@media screen and (max-width: 400px) {
+    .shoes-page-section .all-cards {
+        justify-content: flex-start;
+    }
+}
+
+.all-cards .card {
+    width: 11rem;
+    border: 1px solid rgb(156, 156, 156);
+    margin: .3rem;
+    padding: .4rem;
+}
+.all-cards .card .shoes-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10rem;
+}
+.shoes-brand {
+    font-weight: 500;
+}
+.shoes-detail {
+    max-width: 10rem;
+    overflow: hidden;
+    max-height: 1rem;
+}
+.all-cards .card .shoes-desc h2{
+    font-size: 1.2rem;
+}
+.all-cards .card .shoes-desc h3 {
+    font-size: .8rem;
+    font-weight: 100;
+    color: gray;
+}
+.all-cards .card .shoes-desc .shoes-delivery {
+    color: rgb(128, 128, 240);
+    font-weight: 600;
+}
+/* .all-cards .card .shoes-desc h2 */
