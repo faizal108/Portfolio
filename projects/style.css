@@ -1,0 +1,66 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(150deg, rgb(254, 161, 228), rgb(168, 228, 252));
+  height: 100vh;
+  width: 100%;
+}
+.heading {
+  font-size: 1rem;
+  margin: 1rem;
+  color: rgb(0, 64, 160);
+  letter-spacing: 0.2rem;
+}
+.input {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  border: 2px solid red;
+  width: 100%;
+}
+.input input {
+  width: 80%;
+  margin: 1rem;
+  padding: 1rem;
+  font-size: 1rem;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+}
+.input input:focus-visible {
+  border: 2px solid green;
+  box-shadow: 0 0 20px green;
+  transition: all 0.3s ease-in-out;
+}
+.output {
+  display: block;
+  width: 100%;
+  padding: 0.5rem;
+}
+.output table {
+  width: 100%;
+  height: 15rem;
+  text-align: center;
+  background-color: rgba(2, 113, 2, 0.689);
+  color: white;
+  border: 2px solid white;
+}
+table tr,
+th,
+td {
+  border: 1px dashed white;
+  border-collapse: collapse;
+}
+#calculate {
+  background-color: rgb(82, 179, 82);
+  color: white;
+}
